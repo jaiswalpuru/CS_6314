@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nearby Hospitals</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHD5Azdp9yEur5KnVYJAUNf8ZAw6m40F4&libraries=places"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/geo.js"></script>
+
+  </head>
+  <body>
+    <div>
+      <div class="row">
+        <div class="col-md-2 p-2"></div>
+        <div class="col-md-2 p-2" id="floating-panel">
+          <h5>Find Hospitals</h5>
+          <div class="form-group">
+            <input
+              type="textbox"
+              class="form-control"
+              placeholder="Enter here.."
+              id="address"
+            />
+          </div>
+          <input
+            type="submit"
+            class="btn btn-warning"
+            value="Search"
+            onclick="init()"
+            id="submit"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </body>
+</html>

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>Travel Photos</title>
+
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-custom_1">
+      <div class="container-fluid">
+        <div class="row"></div>
+        <header>
+          <a class="text-light link-custom header-button" href="#"
+            ><img
+              src="./img/header/log-out-outline.svg"
+              alt="logout"
+              class="svg"
+            />Logout</a
+          >
+          <a class="text-light link-custom header-button" href="#"
+            ><img
+              src="./img/header/person-outline.svg"
+              alt="profile"
+              class="svg"
+            />Profile</a
+          >
+          <a class="text-light link-custom header-button" href="#"
+            ><img
+              src="./img/header/star-outline.svg"
+              alt="favorites"
+              class="svg"
+            />Favorites</a
+          >
+        </header>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom_2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><p class="nav_heading mb-2">Share Your Travels</p></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Browse
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Continents</a></li>
+                <li><a class="dropdown-item" href="#">Popular</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+          <li class="nav-item dropdown">
+            <form class="d-flex px-2 mb-0">
+              <input
+                type="text"
+                class="form-control p-2"
+                placeholder="Search"
+              />
+              <button type="button" class="btn btn-danger submit-button">
+                Submit
+              </button>
+            </form>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="list-group mt-4">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+              style="background-color: #292c5a;"
+            >
+              Continents
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >Africa</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >Asia</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >Europe</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >North America</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >Oceania</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >South America</a
+            >
+          </div>
+
+          <div class="list-group mt-4">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+              style="background-color: #292c5a;"
+            >
+              Popular
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >Canada</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >France</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >Italy</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >Germany</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >Ghana</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >Greece</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >Hungary</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >Spain</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >United Kingdom</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action link-custom-2"
+              >United States</a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-8 mt-4">
+              <img
+                src="img/temple.jpg"
+                alt="temple_of_hephaistos"
+                class="img-fluid"
+              />
+              <p class="card-text">
+                Located on the western perimeter of Agora in Athens. Built in
+                460-415 BCE, it is the best preserved temple of antiquity.
+              </p>
+            </div>
+            <div class="col-md-4 mt-4">
+              <h1 class="mt-4">Temple of Hephaistos</h1>
+              <div class="card border-primary mb-3">
+                <div class="card-body">
+                  <p class="card-text mb-1">
+                    By <a href="#" class="link-custom">Ellie Sullivan</a>
+                  </p>
+                  <p class="card-text mb-1">
+                    Country <a href="#" class="link-custom">Greece</a>
+                  </p>
+                  <p class="card-text mb-1">
+                    City <a href="#" class="link-custom">Athens</a>
+                  </p>
+                  <p class="card-text mb-1">Taken on: August 8, 2017</p>
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div
+                  class="btn-group btn-group-lg"
+                  role="group"
+                  aria-label="Basic outlined example"
+                >
+                  <button type="button" class="btn btn-outline-primary">
+                    <img
+                      src="./img/related/heart-fill.svg"
+                      alt="heart"
+                      class="svg"
+                    />
+                  </button>
+                  <button type="button" class="btn btn-outline-primary">
+                    <img
+                      src="./img/related/cloud-download-fill.svg"
+                      alt="download"
+                      class="svg"
+                    />
+                  </button>
+                  <button type="button" class="btn btn-outline-primary">
+                    <img
+                      src="./img/related/printer-fill.svg"
+                      alt="printer"
+                      class="svg"
+                    />
+                  </button>
+                  <button type="button" class="btn btn-outline-primary">
+                    <img
+                      src="./img/related/chat-left-fill.svg"
+                      alt="chat"
+                      class="svg"
+                    />
+                  </button>
+                </div>
+              </div>
+              <h2 class="mt-4">Tags</h2>
+              <div class="card border-primary mb-4">
+                <div class="card-body">
+                  <button class="btn btn-primary mt-1 tags" type="submit">
+                    Ancient
+                  </button>
+                  <button class="btn btn-primary mt-1 tags" type="submit">
+                    Garden
+                  </button>
+                  <button class="btn btn-primary mt-1 tags" type="submit">
+                    Hill
+                  </button>
+                  <button class="btn btn-primary mt-1 tags" type="submit">
+                    Ruins
+                  </button>
+                  <button class="btn btn-primary mt-1 tags" type="submit">
+                    Sunshine
+                  </button>
+                  <button class="btn btn-primary mt-1 tags" type="submit">
+                    Temple
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h3 class="mt-4">Related Photos</h3>
+            <div class="card m-2" style="width: 18rem;">
+              <img
+                src="./img/related/8710320515.jpg"
+                alt="temple1"
+                class="img-thumbnail thumbnail-img"
+              />
+              <div class="card-body">
+                <p class="card-text p-thumbnail-img">Ekklisia Agii Isidori</p>
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div class="btn-group" role="group" aria-label="First group">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-group-view"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-eye-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"
+                        ></path>
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                        ></path>
+                      </svg>
+                      View
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="Second group">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-group-favourite"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        fill="white"
+                        class="bi bi-heart-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                        ></path>
+                      </svg>
+                      Favourite
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card m-2" style="width: 18rem;">
+              <img
+                src="./img/related/8710513053.jpg"
+                alt="temple1"
+                class="img-thumbnail thumbnail-img"
+              />
+              <div class="card-body">
+                <p class="card-text p-thumbnail-img">Theatre of Dionysus</p>
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div class="btn-group" role="group" aria-label="First group">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-group-view"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-eye-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"
+                        ></path>
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                        ></path>
+                      </svg>
+                      View
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="Second group">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-group-favourite"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        fill="white"
+                        class="bi bi-heart-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                        ></path>
+                      </svg>
+                      Favourite
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card m-2" style="width: 18rem;">
+              <img
+                src="./img/related/8711623884.jpg"
+                alt="temple1"
+                class="img-thumbnail thumbnail-img"
+              />
+              <div class="card-body">
+                <p class="card-text p-thumbnail-img">Roman Agora</p>
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div class="btn-group" role="group" aria-label="First group">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-group-view"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-eye-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"
+                        ></path>
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                        ></path>
+                      </svg>
+                      View
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="Second group">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-group-favourite"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        fill="white"
+                        class="bi bi-heart-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                        ></path>
+                      </svg>
+                      Favourite
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card m-2" style="width: 18rem;">
+              <img
+                src="./img/related/9498388516.jpg"
+                alt="temple1"
+                class="img-thumbnail thumbnail-img"
+              />
+              <div class="card-body">
+                <p class="card-text p-thumbnail-img">Temple of Asclepius</p>
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div class="btn-group" role="group" aria-label="First group">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-group-view"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-eye-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"
+                        ></path>
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                        ></path>
+                      </svg>
+                      View
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="Second group">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn-group-favourite"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        fill="white"
+                        class="bi bi-heart-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                        ></path>
+                      </svg>
+                      Favourite
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col-md-6 mt-2">
+          <h4 class="footer-text">Share Your Travels</h4>
+          <p class="footer-text">
+            This is a case study from the textbook fundamentals of web
+            development. This book is published by Puru and is the only textbook
+            that covers the essentials of entire feild of contemporary web
+            development.
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="footer-text">Headquarters</h5>
+              <p class="footer-text mb-1">Mount Royal University.</p>
+              <p class="footer-text mb-1">4825 Mount Royal Gate SW</p>
+              <p class="footer-text mb-1">Calgary, Canada, T3E 045</p>
+            </div>
+            <div class="col-md-6">
+              <h5 class="footer-text">Follow Us</h5>
+              <button type="button" class="btn btn-secondary camera">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-camera-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"
+                  ></path>
+                  <path
+                    d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"
+                  ></path>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-secondary user">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  ></path>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-secondary tags-glyph">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-tags-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                  ></path>
+                  <path
+                    d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043-7.457-7.457z"
+                  ></path>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-secondary bookmark">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-bookmark-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
+                  ></path>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-secondary globe">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-globe2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-2">
+          <div class="fs-4 mb-3 text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-pencil-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+              ></path>
+            </svg>
+            Recent Posts
+          </div>
+          <ul class="list-unstyled">
+            <li class="media">
+              <div class="media-body text-white row">
+                <div class="col-md-2">
+                  <img
+                    class="mr-1 footer-image"
+                    src="./img/footer/5856697109.jpg"
+                    alt="Generic placeholder image"
+                  />
+                </div>
+                <div class="col-md-10">
+                  <a href="#" class="link-custom">Nowa Scoztia</a>
+                  <p class="time-font"><i>5 minutes ago</i></p>
+                </div>
+              </div>
+              <hr />
+            </li>
+            <li class="media">
+              <div class="media-body text-white row">
+                <div class="col-md-2">
+                  <img
+                    class="mr-1 footer-image"
+                    src="./img/footer/6114904363.jpg"
+                    alt="Generic placeholder image"
+                  />
+                </div>
+                <div class="col-md-10">
+                  <a href="#" class="link-custom">Mountain Cirldberg</a>
+                  <p class="time-font"><i>11 minutes ago</i></p>
+                </div>
+              </div>
+              <hr />
+            </li>
+            <li class="media">
+              <div class="media-body text-white row">
+                <div class="col-md-2">
+                  <img
+                    class="mr-1 footer-image"
+                    src="./img/footer/6592294487.jpg"
+                    alt="Generic placeholder image"
+                  />
+                </div>
+                <div class="col-md-10">
+                  <a href="#" class="link-custom">Calgary in the snow</a>
+                  <p class="time-font"><i>21 minutes ago</i></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mt-2">
+          <div class="fs-4 mb-3 text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-envelope-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+              ></path>
+            </svg>
+            Contact Us
+            <form class="px-1 mb-3">
+              <div class="mt-2">
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  placeholder="Enter name ..."
+                />
+              </div>
+              <div class="mt-2">
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  placeholder="Enter email ..."
+                />
+              </div>
+              <div class="mt-2">
+                <input
+                  type="text"
+                  class="form-control p-4"
+                  placeholder="Enter message ..."
+                />
+              </div>
+              <div class="mt-2">
+                <button type="button" class="btn btn-danger button-contact">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom-bg-color">
+          <footer class="footer-bottom">
+            <div class="mt-2">
+              <p class="footer-bottom-p">
+                Copyright © 2017 Creative Commons Sharpable
+              </p>
+            </div>
+            <div class="mt-2">
+              <div class="d-flex justify-content-center">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a class="link-custom" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a class="link-custom" href="#">About</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a class="link-custom" href="#">Contact</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a class="link-custom" href="#">Browse</a>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

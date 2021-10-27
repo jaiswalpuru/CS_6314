@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Travel Photos</title>
+
+    <style>
+        .navbar-custom{
+            background-color:#38668E 
+        }
+        .link-custom{
+            text-decoration:none
+        }
+        body{
+            background-color: rgb(241, 240, 240);
+        }
+        .link-custom-2{
+            color:blue;
+        }
+        .bread-crum{
+            border-radius: 5px;
+        }
+        .search-image{
+            border-radius: 4px;
+            margin-top: 1px; 
+            background-color: rgb(209, 25, 25); 
+            width: 40px;
+        }
+        .search-text{
+            background-color: #EEE;
+        }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Share Your Travels</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Browse
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Continents</a></li>
+                  <li><a class="dropdown-item" href="#">Browse</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        
+        <div class="row">
+            <div class="col-md-3 mt-4">
+                <div class="border -1" style="border-radius: 5px;">
+                    <p class="d-flex px-2 mb-3 search-text text-secondary" style="margin-left:1rem;margin-top: 10px;">Search</p>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                      <form class="d-flex px-2 mb-3">
+                      <input type="text" class="form-control p-2" placeholder="search ..." />
+                      <div class="search-image">
+                        <svg style="margin-left:8px;margin-top:8px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="list-group mt-4">
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                      Continents
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action link-custom-2">Africa</a>
+                    <a href="#" class="list-group-item list-group-item-action link-custom-2">Asia</a>
+                    <a href="#" class="list-group-item list-group-item-action link-custom-2">Europe</a>
+                    <a href="#" class="list-group-item list-group-item-action link-custom-2">North America</a>
+                    <a href="#" class="list-group-item list-group-item-action link-custom-2">Oceania</a>
+                    <a href="#" class="list-group-item list-group-item-action link-custom-2">South America</a>
+                  </div>
+
+                  <div class="list-group mt-4">
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                      Popular Conutries
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action link-custom-2">Canada</a>
+                    <a href="#" class="list-group-item list-group-item-action link-custom-2">Germany</a>
+                    <a href="#" class="list-group-item list-group-item-action link-custom-2">Ghana</a>
+                    <a href="#" class="list-group-item list-group-item-action link-custom-2">United Kingdom</a>
+                    <a href="#" class="list-group-item list-group-item-action link-custom-2">United States</a>
+                  </div>
+
+            </div>
+
+          <div class="col-md-9 mt-4">
+
+            <div class="bg-light bread-crum">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="padding:10px;">
+                      <li class="breadcrumb-item"><a class="link-custom" href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a class="link-custom" href="#">Library</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Temple of Hephaistos</li>
+                    </ol>
+                </nav>
+            </div>
+            <h1 class="mt-4">Temple of Hephaistos</h1>
+
+            <div class="row">
+                <div class="col-md-8 mt-4">
+                    <img src="img/temple.jpeg" alt="temple_of_hephaistos" class="img-fluid">
+                </div>
+                <div class="col-md-4 mt-4 ">
+                    <div class="card border-primary mb-3">
+                        <div class="card-body">
+                          <p class="card-text">By <a href="#" class="link-custom">Ellie Sullivan</a></p>
+                          <p class="card-text">Taken in <a href="#" class="link-custom">Greece</a></p>
+                          <p class="card-text">Located on the western perimeter of Agora in Athen. Built in 460-415 BCE, it is the best preserved temple of antiquity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+          </div>
+
+        </div>
+
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  </body>
+</html>

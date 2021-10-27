@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Earthquake locations</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/earthquake.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <div class="row">
+        <div class="col-md-2 p-2"></div>
+        <div class="col-md-2 p-2" id="floating-panel">
+          <h5>Earthquake locator</h5>
+          <div class="form-group">
+            <input
+              type="textbox"
+              class="form-control"
+              placeholder="Enter here.."
+              id="address"
+            />
+          </div>
+          <input
+            type="submit"
+            class="btn btn-warning"
+            value="Search"
+            onclick="exactPlaceEq()"
+            id="submit"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places"
+      async
+    ></script>
+  </body>
+</html>
