@@ -15,13 +15,6 @@ function initMap(){
         zoom:2,
         mapTypeId : "roadmap",
       });
-      map.data.addGeoJson(data);
-      map.data.setStyle((feature) => {
-        const magnitude = feature.getProperty("mag");
-        return {
-          icon: getCircle(magnitude),
-        };
-      });
       
       var place;
       for (var i = 0; i < response.features.length; i++) {
@@ -35,6 +28,7 @@ function initMap(){
         new google.maps.Marker({
           map,
           title: response.features[i].properties.place,
+          icon: getCircle(response.features[i].properties.mag),
           position: latLng,
         });
       }
@@ -83,6 +77,7 @@ function callBack(results, status) {
         const latLng = new google.maps.LatLng(response.features[i].geometry.coordinates[1], response.features[i].geometry.coordinates[0]);
         new google.maps.Marker({
           map,
+          icon:getCircle(response.features[i].properties.mag),
           title: response.features[i].properties.place,
           position: latLng,
         });
