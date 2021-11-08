@@ -1,0 +1,52 @@
+<%- include ('partials/header') %>
+
+
+<div class="jumbotron">
+  <h1 class="display-4">Vidzy Application</h1>
+  <p class="lead">This is the list of most popular videos</p>
+  <a class="btn btn-primary btn-lg" href="/videos/new" role="button">
+  Add new video</a>
+  <form action='/videos' method='POST' style="margin-top: 2%;">
+    <div class="form-group" style="width: 40%;">
+      <input type="text" name="title" class="form-control" placeholder="Title">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-info" >Search</button>
+    </div>
+     <div class="form-group" style="width:40%">
+      <label for="cars">Genre</label>
+      <select name="genre" id="genre">
+        <option value="select">Select</option>
+        <option value="action">Action</option>
+        <option value="drama">Drama</option>
+        <option value="scifi">Scifi</option>
+        <option value="romance">Romance</option>
+        <option value="fantasy">Fantasy</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-info" >Filter</button>
+    </div>
+  </form>
+</div>
+
+
+
+<div class="container">
+
+
+<div class="row">
+<% results.forEach(function(video){ %>
+	<div class="sm-col-3">
+		<img src="images/<%= video.image %>" style="width:200px; height:200px;" class="img-thumbnail"/>
+		<div class="caption"><a href="videos/<%= video._id %>"><%= video.title %></a></div>
+	</div>
+
+
+<% }); %>
+
+</div>
+</div>
+
+<%- include ('partials/footer') %>
+
